@@ -5,8 +5,6 @@ function palindrome(str) {
 
   str = str.replace(regex, '');
 
-  console.log(str);
-
   for (var i = 0; i < str.length; i++) {
     var j = str.length - 1 - i;
 
