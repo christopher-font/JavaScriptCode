@@ -1,18 +1,11 @@
 function spinalCase(str) {
   let regex1 = /([a-z])([A-Z])/g;
-
   str = str.replace(regex1, "$1 $2");
-  
   str = str.toLowerCase();
-
   let regex2 = /_|-/g;
-
   str = str.replace(regex2, " ");
-
   let regex3 = / /g;
-
   str = str.replace(regex3, "-");
-    
   return str;
 }
 
